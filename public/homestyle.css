@@ -538,22 +538,23 @@ footer h4 {
     }
 
     #main-header:hover {
-        background-color: #fff;
+        background-color: #333;
+    }
 
+    #main-header:hover #hero .bg-image{
+        filter: contrast(0.3);
     }
 
     #main-header:hover #menu a {
-        color: #525252;
+        color:#fff;
         text-decoration: underline;
         border: none;
     }
 
-    #main-header:hover h1 {
-        color: #333;
-    }
+    
 
     #main-header:hover #menu .fa-shopping-cart {
-        color: #333;
+        color: rgb(251, 238, 1);
     }
 
 

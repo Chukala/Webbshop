@@ -301,27 +301,16 @@
          rating3.textContent = item.rating3;
          star3.appendChild(rating3);
      })
- }
      //Calculator  to do total price
-    /* function showTotalPrice() {
+     function showTotalPrice() {
          let kopycart = CART.contents;
          let sum = kopycart.reduce(function (acu, cur) { //here we use buit in reduce method old value + current value
              return acu + cur.qty * cur.itemPrice;
          }, 0);
          sum = Math.round(sum * 100) / 100
          document.getElementById('div1').innerHTML = 'Total: ' + sum + 'SEK';
-
-     }*/
-      //Calculator  to do total price
-function showTotalPrice() {
-        let divPrice = document.getElementById('div1');
-        fetch('/calculate/')
-            .then(function (response) {
-                return response.text();
-                // screen.innerHTML = t;
-            }).then(function (response) {
-                divPrice.innerHTML = 'Total: ' + response + 'SEK';
-            });    
+     }
+      
      // to creat total price
      let total = document.createElement('div');
      let x = showTotalPrice();
@@ -624,7 +613,7 @@ function purchase1() {
  }
 
  // Remove cart items button
-function removItem(event) {
+ function  removItem(event) {
      var buttonClicked = event.target;
      buttonClicked.parentElement.parentElement.remove();
      CART.sync();

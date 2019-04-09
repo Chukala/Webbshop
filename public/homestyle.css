@@ -251,7 +251,7 @@ a {
 
 #hero h1 span {
     font-size: 120%;
-    border-bottom: solid 2px rgb(251, 238, 1);
+    border-bottom: solid 2px rgba(236, 159, 15, 0.836);
     z-index: 5;
 }
 

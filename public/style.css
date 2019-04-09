@@ -165,12 +165,13 @@
      display: grid;
      grid-template-columns: repeat(4, 1fr);
      grid-gap: 10px;
-
+    margin-left: 2rem;
      flex: 1 1 auto;
  }
 
  #cart img {
-     max-width: 300px;
+     max-width: 250px;
+     max-height: 270px;
 
  }
 
@@ -194,6 +195,8 @@
      box-sizing: content-box;
      max-width: 310px;
      position: relative;
+   
+     
  }
 
  #close_icon {
@@ -210,6 +213,7 @@
  .card img {
      width: 100%;
      filter: contrast(0.3);
+
  }
 
  .card img:hover {
@@ -218,14 +222,17 @@
 
  .card .price {
      font-size: 1.5rem;
+     
  }
 
  .card h2 {
      font-size: 1.2rem;
+     align-items: baseline;
  }
 
  .card p {
      font-size: 0.8rem;
+     align-items: baseline;
  }
 
  .card .btn {

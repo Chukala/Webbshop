@@ -289,6 +289,7 @@
          rating3.textContent = item.rating3;
          star3.appendChild(rating3);
      })
+<<<<<<< HEAD
      
     }
      
@@ -309,6 +310,24 @@
                  console.log(thePrice);
              }).catch(error => console.log("Can not get: " + error));
      }
+=======
+     //Calculator  to do total price
+     function showTotalPrice() {
+         let kopycart = CART.contents;
+         let sum = kopycart.reduce(function (acu, cur) { //here we use buit in reduce method old value + current value
+             return acu + cur.qty * cur.itemPrice;
+         }, 0);
+         sum = Math.round(sum * 100) / 100
+         document.getElementById('div1').innerHTML = 'Total: ' + sum + 'SEK';
+     }
+      
+     // to creat total price
+     let total = document.createElement('div');
+     let x = showTotalPrice();
+     total.textContent = x;
+     var element = document.getElementById("div1");
+     element.appendChild(total);
+>>>>>>> d9136d6b31d33d765199495d9b858e2be968b9fd
 
  //request the list of products from the "server"
 function getProducts(success, failure) {
@@ -585,6 +604,7 @@ function purchase1() {
  }
 
  // Remove cart items button
+<<<<<<< HEAD
 function removItem(ev) {
    
     let id = parseInt(ev.target.getAttribute('data-id'));
@@ -596,6 +616,14 @@ function removItem(ev) {
     CART.sync();
     
 }
+=======
+ function  removItem(event) {
+     var buttonClicked = event.target;
+     buttonClicked.parentElement.parentElement.remove();
+     CART.sync();
+ }
+
+>>>>>>> d9136d6b31d33d765199495d9b858e2be968b9fd
 function purchase() {
      $("main").remove();
  }

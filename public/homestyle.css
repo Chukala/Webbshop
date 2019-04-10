@@ -328,6 +328,46 @@ a {
     cursor: pointer;
 }
 
+.card{
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(236, 159, 15, 0.836);
+    padding: 1rem;
+    box-sizing: content-box;
+    max-width: 310px;
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+    filter: contrast(0.3);
+}
+
+.card img:hover {
+    filter: contrast(0.8);
+}
+
+.card .price {
+    font-size: 1.5rem;
+}
+
+.card h2 {
+    font-size: 1.2rem;
+}
+
+.card p {
+    font-size: 0.8rem;
+}
+
+.card .btn {
+    border: 2px solid cornflowerblue;
+    padding: 0.25rem 1rem;
+    color: cornflowerblue;
+    cursor: pointer;
+}
+
 /*Footer Styles*/
 
 footer {
@@ -459,22 +499,23 @@ footer h4 {
     }
 
     #main-header:hover {
-        background-color: #fff;
+        background-color: #333;
+    }
 
+    #main-header:hover #hero .bg-image{
+        filter: contrast(0.3);
     }
 
     #main-header:hover #menu a {
-        color: #525252;
+        color:#fff;
         text-decoration: underline;
         border: none;
     }
 
-    #main-header:hover h1 {
-        color: #333;
-    }
+    
 
     #main-header:hover #menu .fa-shopping-cart {
-        color: #333;
+        color: rgb(251, 238, 1);
     }
 
 

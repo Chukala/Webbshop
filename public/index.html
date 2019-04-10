@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home</title>
     <!-- CSS -->
+    <!--here is the problem it overwright our home style-->
+    <!--link rel="stylesheet" href="./style.css"-->
     <link rel="stylesheet" href="./homestyle.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
@@ -31,9 +33,9 @@
             <input type="checkbox" class="nav-toggle" id="nav-toggle">
             <nav id="menu">
                 <ul>
-                    <li><a href="index.html">Nyheter</a></li>
-                    <li><a href="catagory.html">Shop</a></li>
-                    <li><a href="">About us</a></li>
+                    <li><a href="index.html">Hem</a></li>
+                    <li><a href="catagory.html">Kategori</a></li>
+                    <li><a href="">Kassa</a></li>
                     <li><i class="fas fa-shopping-cart"></i></li>
                 </ul>
             </nav>
@@ -52,11 +54,12 @@
         <button class="button">Köp Kollektionen</button>
     </section>
     <!--Products-->
-    <section id="productwrapper">
-        <div id="homeProducts">
-        </div>
-        <div id="arrow"><i class="fas fa-chevron-right"></i></div>
+    <section id="product_heading">
+        <div id="popular">Populära proukter</div>
     </section>
+
+    <section id="homeProducts"></section>
+
     <!--Footer-->
     <footer>
 
@@ -75,7 +78,7 @@
                 <div class="contact-img">
                     <i class="fab fa-facebook-f"></i>
                     <i class="fab fa-instagram"></i>
-                    <i class="fab fa-youtube-square"></i>
+                    <i class="fab fa-twitter-square"></i>
                 </div>
             </div>
             <div class="snap-links">
@@ -122,4 +125,5 @@
 <!-- SCRIPTS -->
 <script src="https://code.jquery.com/jquery.min.js"></script>
 <script src="./assets/js/custom.js"></script>
+
 </html>

@@ -3,16 +3,17 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Shoping Cart</title>
+    <title>Kassa</title>
     <meta name="viewport" content="width=device-width">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+   
         <!--to fix the footer icon the above link should exist but it removes the comment arrow up and down, fix it-->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -20,26 +21,15 @@
 <body>
     <header id="task_flyout">
         <div class="top-nav">
-            <a href="">www.onlineshoping.com *Fast delivery and free return</a>
-            <ul>
-                <li> <a href="">Custmere service</a></li>
-                <li><a href="">Log in</a></li>
-                <li class="flag"><a href=""><img src="assets/images/sweden.png"></a>
-                    <a id="sek" href="">SEK</a>
-                    <a href=""><img id="sort" src="assets/images/sort-down.png"></a>
-                </li>
-            </ul>
+            <a href="">SNABBLEVERANS NÄSTA DAG FRI FRAKT*</a>
+           
         </div>
         <div class="middle-nav">
-            <h1 id="h1">E-COMMERCE</h1>
+            <h1 id="h1">Webshop</h1>
             <ul>
-                <li><a href="">NEW</a></li>
-                <li><a href="">CATAGORY</a></li>
-                <li><a href="">PRODUCT</a></li>
-                <li><a href="">BRANDS</a></li>
-                <li><a href="">ORDERS</a></li>
-                <li><a href="">OUTLET</a></li>
-                <li><a href="">SEARCH</a></li>
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="catagory.html">Kategori</a></li>
+                <li><a href="kassa.html">Kassa</a></li>
             </ul>
         </div>
 
@@ -59,12 +49,12 @@
                 <input type="radio" name="radio">
                 <span class="checkmark"></span>
             </label>
-            <label class="container">Factura
+            <label class="container">Faktura
                 <input type="radio" name="radio">
                 <span class="checkmark"></span>
             </label>
             <div id="div1"></div>
-            <button id="btn" onclick="purchase1()">Purchas</button>
+            <button id="btn" onclick="purchase1()">Genomför köp</button>
         </div>
         <div id="close">
             <!--  <a href="#" id="close_icon"><i class="fa fa-2x fa fa-times-circle" onclick="purchase()"></i></a>-->
@@ -138,7 +128,7 @@
                     <div class="contact-img">
                         <i class="fab fa-facebook-f"></i>
                         <i class="fab fa-instagram"></i>
-                        <i class="fab fa-youtube-square"></i>
+                        <i class="fab fa-twitter-square"></i>
                     </div>
                 </div>
                 <div class="snap-links">
@@ -191,6 +181,7 @@
         </footer>
     </section>
     <script src="./assets/js/custom.js"></script>
+   <script src='./private/mathLogic'></script>
 </body>
 
 </html>

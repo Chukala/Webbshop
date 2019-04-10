@@ -157,7 +157,7 @@ a {
     background: #333;
     top: 100%;
     width: 45%;
-    height: 100vh;
+    height: 75vh;
     text-align: left;
     left: 0;
     top: 0;
@@ -251,7 +251,7 @@ a {
 
 #hero h1 span {
     font-size: 120%;
-    border-bottom: solid 2px rgb(251, 238, 1);
+    border-bottom: solid 2px rgba(236, 159, 15, 0.836);
     z-index: 5;
 }
 
@@ -263,108 +263,69 @@ a {
     padding: 15px;
     text-align: center;
     font-size: 65%;
-}
-
-
-
-/*Product Styles*/
-#productwrapper {
-    display: flex;
-    width: 80%;
-    margin: auto;
-}
-#homeProducts{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-gap: 10px;
-    justify-content: center;
-    text-align: center;
-
-}
-
-#search {
-    width: 80%;
-    height: 60px;
-    margin: 0px auto;
-    display: flex;
-    justify-content: space-between;
-}
-
-#search-form {
-    width: 100%;
-    height: 60px;
-    display: flex;
-    justify-content: space-between;
-}
-
-#search-form .productform {
-    width: 40%;
-    height: 40px;
-}
-
-.productform .form {
-    width: 100%;
-    height: 40px;
-    padding-left: 1%;
-}
-
-#filter form {
-    width: 80%;
-    height: 50px;
-    margin: 2% auto;
-    display: flex;
-    justify-content: space-around;
-}
-
-.productform {
-    width: 20%;
-    height: 40px;
-    margin: 2% auto;
-}
-
-.btn {
-    width: 100%;
-    height: 40px;
-    margin: 1% 0px;
-}
-
-.productform .filter {
-    width: 100%;
-    height: 30px;
-}
-
-.products img {
-    margin-bottom: 10px;
-    max-width: 50%;
-    opacity: 0.3;
-}
-
-.products img:hover {
-    max-width: 60%;
-    opacity: 0.8;
-}
-
-.product-inner {
-    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
-    padding: 10px;
-    min-height: 16rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: #999;
-
-}
-
-#homeproducts {
-    display: grid;
-    grid-gap: .5rem;
-    text-align: center;
-}
-
-#arrow {
     display: none;
+}
+
+/*Product heading Styles*/
+#product_heading {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0px auto 10px auto;
+}
+
+#popular {
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 0 auto 3% auto;
+}
+
+/*home products starts here*/
+#homeProducts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    margin: auto 2rem;
+    flex: 1 1 auto;
+}
+
+.card {
+    border: 1px solid rgba(236, 159, 15, 0.836);
+    padding: 1rem;
+    box-sizing: content-box;
+    max-width: 310px;
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+    filter: contrast(0.3);
+}
+
+.card img:hover {
+    filter: contrast(0.8);
+}
+
+.card .price {
+    font-size: 1.5rem;
+}
+
+.card h2 {
+    font-size: 1.2rem;
+    align-items: baseline;
+}
+
+.card p {
+    font-size: 0.8rem;
+    align-items: baseline;
+}
+
+.card .btn {
+    border: 2px solid cornflowerblue;
+    padding: 0.25rem 1rem;
+    color: cornflowerblue;
+    cursor: pointer;
 }
 
 /*Footer Styles*/
@@ -544,24 +505,62 @@ footer h4 {
         display: inline-block;
         top: 40%;
         left: 35%;
+        
     }
 
     /*PRODUCT*/
-
-    #homeproducts {
+    /*catagory style fit to home page style*/
+    #homeProducts {
+        display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 10px;
+        margin-left: 2rem;
+        flex: 1 1 auto;
+    }
+
+    .card {
+        border: 1px solid rgba(236, 159, 15, 0.836);
+        padding: 1rem;
+        box-sizing: content-box;
+        max-width: 310px;
+        position: relative;
 
 
     }
 
-    #arrow {
-        display: flex;
-        align-items: center;
-        padding: 1%;
-        font-size: 150%;
+    .card img {
+        width: 100%;
+        filter: contrast(0.3);
+
     }
 
+    .card img:hover {
+        filter: contrast(0.8);
+    }
+
+    .card .price {
+        font-size: 1.5rem;
+
+    }
+
+    .card h2 {
+        font-size: 1.2rem;
+        align-items: baseline;
+    }
+
+    .card p {
+        font-size: 0.8rem;
+        align-items: baseline;
+    }
+
+    .card .btn {
+        border: 2px solid cornflowerblue;
+        padding: 0.25rem 1rem;
+        color: cornflowerblue;
+        cursor: pointer;
+    }
+
+    /*catagory style fit to home page style*/
     /*FOOTER*/
     footer {
         width: 100%;
@@ -602,8 +601,9 @@ footer h4 {
         display: flex;
         justify-content: space-between;
     }
+
     /*home page products style starts here */
-    #homeProducts{
+    #homeProducts {
         width: 90vw;
         max-width: 1170px;
         margin: 0px auto;
@@ -612,5 +612,6 @@ footer h4 {
         grid-row-gap: 2rem;
         grid-column-gap: 1.5rem;
     }
+
     /*home page products ends here*/
 }

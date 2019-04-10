@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Catagorie</title>
+    <title>Kategori</title>
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -18,67 +18,59 @@
 <body>
     <header id="task_flyout">
         <div class="top-nav">
-            <a href="">www.onlineshoping.com *Fast delivery and free return</a>
-            <ul>
-                <li> <a href="">Custmere service</a></li>
-                <li><a href="">Log in</a></li>
-                <li class="flag"><a href=""><img src="assets/images/sweden.png"></a>
-                    <a id="sek" href="">SEK</a>
-                    <a href=""><img id="sort" src="assets/images/sort-down.png"></a>
-                </li>
-            </ul>
+            <a href="">SNABBLEVERANS NÄSTA DAG FRI FRAKT*</a>
+            
         </div>
         <div class="middle-nav">
-            <h1 id="h1">E-COMMERCE</h1>
+            <h1 id="h1">Webshop</h1>
             <ul>
-                <li><a href="">NEW</a></li>
-                <li><a href="">CATAGORY</a></li>
-                <li><a href="">PRODUCT</a></li>
-                <li><a href="">BRANDS</a></li>
-                <li><a href="">ORDERS</a></li>
-                <li><a href="">OUTLET</a></li>
-                <li><a href="">SEARCH</a></li>
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="catagory.html">Kategori</a></li>
+                <li><a href="kassa.html">Kassa</a></li>
             </ul>
+             <!--filter and search-->
+             <section id="filterProducts">
+                
+                 <div id="filter">
+                     <form>
+                         <div class="productform">
+                             <select data-filter="catagorie" id="catagorie" class="filter-catagorie filter">
+                                 <option value="">Välj Katagorie</option>
+                                 <option value="">Show All</option>
+                             </select>
+                         </div>
+                         <div class="productform">
+                             <select data-filter="brand" id="brand" class="filter-brand filter">
+                                 <option value="">Välj Varumärke</option>
+                                 <option value="">Show All</option>
+                             </select>
+                         </div>
+                         <div class="productform">
+                             <select data-filter="color" id="color" class="filter-color filter">
+                                 <option value="">Välj Färg</option>
+                                 <option value="">Show All</option>
+                             </select>
+                         </div>
+                     </form>
+                      <div id="search">
+                          <form id="search-form">
+                              <div class="productform">
+                                  <input id="input" class="form" type="text" autocomplete="off" value=""
+                                      placeholder="Search" />
+                              </div>
+                              <div class="productform">
+                                  <button type="submit" class="btn"><img src="https://png.icons8.com/search" width="20px" height="20px"></button>
+                              </div>
+                          </form>
+                      </div>
+                 </div>
+             </section>
         </div>
 
     </header>
     <main>
 
-        <!--filter and search-->
-        <section id="filterProducts">
-            <div id="search">
-                <form id="search-form">
-                    <div class="productform">
-                        <input id="input" class="form" type="text" autocomplete="off" value="" placeholder="Search" />
-                    </div>
-                    <div class="productform">
-                        <button type="submit" class="btn">Search</button>
-                    </div>
-                </form>
-            </div>
-            <div id="filter">
-                <form>
-                    <div class="productform">
-                        <select data-filter="catagorie" id="catagorie" class="filter-catagorie filter">
-                            <option value="">Välj Katagorie</option>
-                            <option value="">Show All</option>
-                        </select>
-                    </div>
-                    <div class="productform">
-                        <select data-filter="brand" id="brand" class="filter-brand filter">
-                            <option value="">Välj Varumärke</option>
-                            <option value="">Show All</option>
-                        </select>
-                    </div>
-                    <div class="productform">
-                        <select data-filter="color" id="color" class="filter-color filter">
-                            <option value="">Välj Färg</option>
-                            <option value="">Show All</option>
-                        </select>
-                    </div>
-                </form>
-            </div>
-        </section>
+       
         <section id="products"> </section>
 
     </main>
@@ -115,7 +107,7 @@
                 <div class="contact-img">
                     <i class="fab fa-facebook"></i>
                     <i class="fab fa-instagram"></i>
-                    <i class="fab fa-youtube-square"></i>
+                    <i class="fab fa-twitter-square"></i>
                 </div>
             </div>
             <div class="snap-links">
